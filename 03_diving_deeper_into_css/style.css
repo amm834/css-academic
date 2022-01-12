@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: Montserrat;
 }
 
 
@@ -28,26 +29,33 @@ h1 {
     width: 100%;
     background: #2ddf5c;
     padding: 8px 16px;
-    margin: 0;
-    padding: 0;
 }
 
 .main-heading > div {
     display: inline-block;
-
+    vertical-align: middle;
 }
 
-.main-heading__brand {
+.main-header__brand {
     text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 45px);
+    vertical-align: middle;
+    width: calc(100% - 75px);
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main-nav__item {
     display: inline-block;
-    list-style-type: none;
 }
