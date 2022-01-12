@@ -1,8 +1,11 @@
+body {
+    margin: 0;
+}
 #product-overview {
     background: #ff1b68;
     padding: 20px;
-    margin: 40px;
-    border: 1px solid black;
+    margin: 20px;
+    border: 10px solid black;
 }
 
 h1 {
