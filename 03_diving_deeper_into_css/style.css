@@ -1,13 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
+
+
 #product-overview {
     background: #ff1b68;
-   /* padding: 20px;
-    margin: 20px;
-    border: 10px solid black;*/
     width: 100%;
-    height: 100%;
+    height: 528px;
+    padding: 10px;
+    border: 5px solid black;
 }
 
 h1 {
@@ -17,4 +22,10 @@ h1 {
 
 .section-title {
     color: #2ddf5c;
+}
+
+.main-heading {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
 }
