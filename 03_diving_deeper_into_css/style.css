@@ -3,9 +3,11 @@ body {
 }
 #product-overview {
     background: #ff1b68;
-    padding: 20px;
+   /* padding: 20px;
     margin: 20px;
-    border: 10px solid black;
+    border: 10px solid black;*/
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
