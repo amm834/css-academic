@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.box {
+    border: 5px solid #0e4f1f;
+    width: 300px;
+    height: 50%;
+    display: inline-block;
+    margin: 0 20px;
+    background: #2ddf5c;
+}
+
+.box:first-child {
+    display: none;
+}
+
+div:last-of-type:hover {
+    background: #ff1b68;
+    color: #ffffff;
+}
