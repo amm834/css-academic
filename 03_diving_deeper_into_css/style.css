@@ -73,3 +73,16 @@ body {
     border-bottom: 5px solid #ffffff;
 }
 
+.main-nav__item--cta a {
+    color: #ffffff;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    background: #ffffff;
+    color: #ff1b68;
+    border: none;
+}
