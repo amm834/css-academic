@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    margin-bottom: 20px;
+    background: #fa923f;
+    padding: 8px 0;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+    color: #521751;
+}
+
+.main-section {
+    height: 800px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.hightlighted {
+    border: 1px solid #fa923f;
+}
