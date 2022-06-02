@@ -16,12 +16,13 @@ a {
 
 .main-section {
 	height: 800px;
-	border: 1px solid #ccc;
+	border: 1px solid #ccc !important;
 	padding: 16px;
 }
 
 .hightlighted {
 	border: 5px solid #fa923f;
+	height: 200px;
 }
 
 a.active {
