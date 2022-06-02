@@ -1,0 +1,22 @@
+.box {
+	width: 200px;
+	height: 200px;
+	background: #ff8800;
+	padding: 20px;
+	margin: 20px;
+}
+
+.box-first {
+	width: 50%;
+	height: 300px;
+	display: inline-block;
+}
+
+.box-second {
+	display: inline-block;
+}
+
+.box-second:hover {
+	background: #000;
+	color: white;
+}
