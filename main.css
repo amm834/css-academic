@@ -27,17 +27,22 @@ body {
 	padding: 8px 16px;
 }
 
-.main-header__logo {
-	display: inline-block;
+.main-header__brand {
+	font: bold;
+	font-size: 22px;
+	color: #0e4f1f;
+	text-decoration: none;
 }
 
 .main-header > div {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .main-nav {
 	display: inline-block;
-	width: calc(100% - 50px);
+	width: calc(100% - 102px);
+	vertical-align: middle;
 }
 
 .main-nav__items {
