@@ -28,10 +28,10 @@ body {
 }
 
 .main-header__brand {
-	font: bold;
-	font-size: 22px;
+	font-size: 25px;
 	color: #0e4f1f;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .main-header > div {
@@ -56,25 +56,19 @@ body {
 	margin: 0 16px;
 }
 
-.main-nav__item::after {
-	content: ' (Link)';
-	color: blue;
-}
-
 .main-nav__item > a {
 	color: #0e4f1f;
 	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 0;
 }
 
 .main-nav__item > a:hover {
 	color: white;
+	border-bottom: 5px solid white;
 }
 
 .main-nav__item > a:active {
 	color: white;
-}
-
-p::first-letter {
-	color: red;
-	font-size: 25px;
+	border-bottom: 5px solid white;
 }
