@@ -29,6 +29,12 @@ body {
     text-align: center;
 }
 
+.plan--highlighted {
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
 #product-overview h1 {
     font-family: Anton, Serif, serif;
 }
