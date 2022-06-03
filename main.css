@@ -41,7 +41,7 @@ body {
 .button {
     background: #0e4f1f;
     color: white;
-    font:inherit;
+    font: inherit;
     font-weight: bold;
     padding: 8px;
     border: 2px solid #0e4f1f;
@@ -53,7 +53,10 @@ body {
 .button:active {
     background: white;
     color: #0e4f1f;
-    outline: none;
+}
+
+.button:focus {
+    /*outline: none;*/
 }
 
 .plan__features {
