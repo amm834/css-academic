@@ -165,11 +165,32 @@ body {
 #key-features > .section-title {
     color: white;
     font-weight: bold;
-    padding: 8px;
+    padding: 32px;
 }
 
-.feature {
+.key-features {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
     display: inline-block;
-    margin: 0 30px;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    width: 128px;
+    height: 128px;
+    background: rgba(210, 120, 154, 0.82);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.key-feature__description {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
