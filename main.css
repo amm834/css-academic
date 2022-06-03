@@ -11,6 +11,12 @@
     text-align: center;
 }
 
+.plans__list {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .plan {
     background: #d5ffdc;
     padding: 16px;
@@ -49,6 +55,7 @@
 .button:focus {
     /*outline: none;*/
 }
+
 
 .plan__features {
     list-style: none;
