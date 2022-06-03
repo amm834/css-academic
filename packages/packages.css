@@ -39,6 +39,21 @@
     background: white;
 }
 
+.main-package__free {
+    float: right;
+    border-left: 4px solid #0e4f1f;
+    border-right: none;
+}
+
+.main-package__free:hover {
+    border-left: 4px solid rgba(241, 74, 30, 0.9);
+    border-right: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
 .main-package--premium {
     background: #0e4f1f;
 }
