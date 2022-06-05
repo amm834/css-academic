@@ -37,10 +37,13 @@
 }
 
 .main-package__badge {
-    color: #0e4f1f;
+    color: white;
     position: absolute;
     right: 20px;
     top: 10px;
+    background: #ff1b68;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .main-package__title {
