@@ -1,6 +1,7 @@
 
 #product-overview {
-    background: url('freedom.jpg');
+    background-image: url('freedom.jpg');
+    background-size: cover;
     color: #ffffff;
     padding: 20px;
     height: 428px;
@@ -10,7 +11,7 @@
 
 .product-overview__slogan {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
 }
 
 .section-title {
