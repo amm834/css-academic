@@ -8,7 +8,7 @@
 
 
 #main-packages {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .main-package {
@@ -20,14 +20,27 @@
     background: rgba(213, 255, 220, 0.87);
 }
 
+
 .main-package:hover {
     border: 4px solid rgba(241, 74, 30, 0.9);
     border-left: 0;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.32);
 }
 
+
 .main-package > a {
     text-decoration: none;
+}
+
+#plus {
+    position: relative;
+}
+
+.main-package__badge {
+    color: #0e4f1f;
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
 .main-package__title {
