@@ -44,6 +44,7 @@
     background: #ff1b68;
     padding: 8px;
     border-radius: 8px;
+    z-index: 10;
 }
 
 .main-package__title {

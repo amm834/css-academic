@@ -4,6 +4,13 @@
     color: #ffffff;
     padding: 20px;
     height: 428px;
+    margin-top: 44px;
+    position: relative;
+}
+
+.product-overview__slogan {
+    position: absolute;
+    bottom: 0;
 }
 
 .section-title {
