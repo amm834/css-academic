@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     padding: 0;
     font-family: Anton, Serif, serif;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 /* Header */
