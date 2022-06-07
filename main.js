@@ -8,3 +8,9 @@ plan_btns.forEach(btn => {
         backdrop.style.display = 'block';
     })
 })
+
+const close_modal_btn = document.querySelector('.modal__action--negative');
+close_modal_btn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    backdrop.style.display = 'none';
+})
