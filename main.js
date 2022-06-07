@@ -1,16 +1,20 @@
 const backdrop = document.querySelector('.backdrop');
-const plan_btns = document.querySelectorAll('.plan button');
 const modal = document.querySelector('.modal');
+const plan_buttons = document.querySelectorAll('.plan button');
+const close_modal_btn = document.querySelector('.modal__action--negative');
 
-plan_btns.forEach(btn => {
+
+plan_buttons.forEach(btn => {
     btn.addEventListener('click', () => {
         modal.style.display = 'block';
         backdrop.style.display = 'block';
     })
 })
 
-const close_modal_btn = document.querySelector('.modal__action--negative');
-close_modal_btn.addEventListener('click', () => {
+backdrop.addEventListener('click', closeModal)
+close_modal_btn.addEventListener('click', closeModal)
+
+function closeModal() {
     modal.style.display = 'none';
     backdrop.style.display = 'none';
-})
+}
