@@ -18,10 +18,16 @@ backdrop.addEventListener('click', () => {
     mobileNav.classList.remove('open')
     closeModal()
 })
-close_modal_btn.addEventListener('click', closeModal)
+
+if (close_modal_btn){
+    close_modal_btn.addEventListener('click', closeModal)
+
+}
 
 function closeModal() {
-    modal.classList.remove('open');
+    if (modal) {
+        modal.classList.remove('open');
+    }
     backdrop.classList.remove('open');
 }
 
