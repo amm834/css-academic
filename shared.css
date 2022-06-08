@@ -110,6 +110,7 @@ body {
     color: white;
     background: #ff1b68;
     border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .main-nav__item--cta > a:hover,
