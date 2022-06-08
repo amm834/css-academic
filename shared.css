@@ -10,6 +10,10 @@ body {
     font-family: Anton, Serif, serif;
 }
 
+main {
+    min-height: calc(100vh - 4rem - 6rem);
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -210,4 +214,8 @@ body {
 
 .open {
     display: block !important;
+}
+
+.clearfix {
+    clear: both;
 }
