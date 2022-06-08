@@ -21,6 +21,18 @@
 .product-overview__slogan {
     position: absolute;
     bottom: 20px;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+    #product-overview {
+        background-position: 50% 25%;
+        height: 40vh;
+    }
+
+    .product-overview__slogan {
+        font-size: 2rem;
+    }
 }
 
 .section-title {
