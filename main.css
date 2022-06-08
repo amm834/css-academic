@@ -86,7 +86,6 @@
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.29);*/
 }
 
 .plan--highlighted .plan__title {
@@ -106,8 +105,24 @@
     border-radius: 8px;
 }
 
-#product-overview h1 {
-    font-family: Anton, Serif, serif;
+@media (min-width: 40rem) {
+    .plans__list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .plan {
+        width: 30%;
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 12rem;
+        max-width: 18rem;
+    }
+
+    .plan--highlighted {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.29);
+    }
+
 }
 
 #key-features {
