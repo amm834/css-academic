@@ -1,0 +1,59 @@
+main {
+    padding-top: 1.5rem;
+}
+
+.signup-title {
+    text-align: center;
+    color: #ff5454;
+}
+
+.signup-form {
+    padding: 1.6rem;
+}
+
+.signup-form input,
+.signup-form select {
+    border: 2px solid #cccccc;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+.signup-form input:focus,
+.signup-form input:focus-visible,
+.signup-form select:focus,
+.signup-form select:focus-visible {
+    outline: none;
+    background: #2ddf5c;
+}
+
+.signup-form label,
+input,
+select {
+    display: block;
+    width: 100%;
+}
+
+.signup-form label {
+    padding: 1rem 0;
+}
+
+label {
+    font-size: 1rem;
+}
+
+[id="agree-terms"],
+label[for*="terms"] {
+    display: inline-block;
+    width: auto;
+}
+
+button[type="submit"] {
+    display: block;
+}
+
+@media (min-width: 40rem) {
+    .signup-form {
+        margin: auto;
+        width: 40rem;
+    }
+}
