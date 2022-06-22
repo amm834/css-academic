@@ -18,8 +18,14 @@ main {
     font: inherit;
 }
 
-.signup-form input:focus,
-.signup-form input:focus-visible,
+.signup-form [type="checkbox"],
+.signup-form [id*="term"],
+.signup-form [for*="term"] {
+    vertical-align: middle;
+}
+
+.signup-form input:focus:not([type="chekbox"]),
+.signup-form input:focus-visible:not([type="checkbox"]),
 .signup-form select:focus,
 .signup-form select:focus-visible {
     outline: none;
@@ -45,6 +51,20 @@ label {
 label[for*="terms"] {
     display: inline-block;
     width: auto;
+}
+
+.signup-form [type="checkbox"] {
+    border: 2px solid #cccccc;
+    width: 1rem;
+    height: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.signup-form [type="checkbox"]:checked {
+    border: 2px solid #0e4f1f;
+    background: #2ddf5c;
 }
 
 button[type="submit"] {
