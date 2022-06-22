@@ -47,6 +47,16 @@ main {
     outline: none;
 }
 
+.button[disabled] {
+    border-color: #cccccc;
+    background: #cccccc;
+}
+
+.button[disabled]:hover {
+    color: white;
+    cursor: not-allowed;
+}
+
 /* Header */
 
 .main-header {
