@@ -69,6 +69,12 @@ label[for*="terms"] {
 
 button[type="submit"] {
     display: block;
+    margin-top: 1rem;
+}
+
+input:not([type="button"]):invalid {
+    border-color: #ff1b68;
+    background: #ff5454;
 }
 
 @media (min-width: 40rem) {
