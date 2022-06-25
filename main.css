@@ -46,6 +46,7 @@ align - cross
     margin: 10px;
     width: 250px;
     font-size: 1.8rem;
+    align-self: center;
 }
 
 .item-3 {
