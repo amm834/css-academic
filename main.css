@@ -55,6 +55,7 @@ align - cross
     border: 5px solid black;
     margin: 10px;
     height: 250px;
+    order: 1;
 }
 
 .item-4 {
