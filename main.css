@@ -14,13 +14,20 @@ body {
     margin: 0;
 }
 
+/*
+Justify - main
+align - cross
+*/
 .flex-container {
     background: white;
     padding: 10px;
     border: 5px solid black;
+    height: 1300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-1 {
