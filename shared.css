@@ -67,6 +67,9 @@ main {
     background: #2ddf5c;
     padding: 0.5rem 1rem;
     z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -94,7 +97,6 @@ main {
 
 
 .main-header__brand {
-    height: 3rem;
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
@@ -104,12 +106,7 @@ main {
 
 
 .main-header__brand img {
-    height: 100%;
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    height: 2.5rem;
 }
 
 .main-nav {
@@ -120,11 +117,14 @@ main {
     margin: 0;
     padding: 0;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
+    list-style: none;
 }
 
 .main-nav__item > a,
@@ -165,9 +165,7 @@ main {
     }
 
     .main-nav {
-        display: inline-block;
-        width: calc(100% - 100px);
-        vertical-align: middle;
+        display: flex;
     }
 }
 
@@ -234,6 +232,9 @@ main {
     margin: 10% auto;
     padding: 0;
     text-align: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
 }
 
 .mobile-nav__item {
