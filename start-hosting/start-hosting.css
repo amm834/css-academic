@@ -9,6 +9,9 @@ main {
 
 .signup-form {
     padding: 1.6rem;
+    display: grid;
+    grid-auto-rows: fit-content(2rem);
+    grid-row-gap: 0.5rem;
 }
 
 .signup-form input,
@@ -81,5 +84,17 @@ input:not([type="button"]):invalid {
     .signup-form {
         margin: auto;
         width: 40rem;
+        grid-template-columns: 6rem 30rem;
+        justify-content: center;
+        grid-row-gap: 1rem;
     }
+
+    [id="title"] {
+        grid-column: span 2;
+    }
+
+    .signup-form__checkbox {
+        grid-column: span 2;
+    }
+
 }
