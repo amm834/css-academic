@@ -14,7 +14,7 @@ body {
     height: 100%;
     font-family: "Montserrat SemiBold", sans-serif;
     display: grid;
-    grid-template-rows: 3.5rem auto 8rem; /* header - main - footer */
+    grid-template-rows: 3.5rem auto fit-content(8rem); /* header - main - footer */
     grid-template-areas: "header" "main" "footer";
 }
 
