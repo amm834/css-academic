@@ -21,6 +21,7 @@
     padding: 2rem;
     width: 80%;
     background: rgba(213, 255, 220, 0.87);
+    overflow: hidden;
 }
 
 
@@ -46,8 +47,11 @@
     top: 10px;
     background: #ff1b68;
     padding: 0.5rem;
-    border-radius: 8px;
     z-index: 10;
+    transform: rotateZ(45deg) translateX(4rem) translateY(-3rem);
+    transform-origin: center;
+    width: 15rem;
+    text-align: center;
 }
 
 .main-package__title {
