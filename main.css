@@ -1,11 +1,11 @@
 .container {
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,15rem);
+    grid-template-columns: repeat(2,15rem);
     justify-content: center;
     grid-gap: 1.5rem;
     grid-auto-rows: minmax(3rem, auto);
-    grid-auto-flow: row;
+    grid-auto-flow: row dense;
 }
 
 .quote {
@@ -14,6 +14,10 @@
     font-family: sans-serif;
     padding: 1rem;
     border-radius: 5px;
+}
+
+.quote:nth-of-type(3){
+    grid-column: span 2;
 }
 
 .quote--featured {
