@@ -125,3 +125,19 @@
         border-right: 4px solid rgba(241, 74, 30, 0.9);
     }
 }
+
+.main-package:hover {
+    animation: move-up 1s ease-out forwards;
+}
+
+@keyframes move-up {
+    0% {
+        transform: translateY(0rem);
+    }
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(-1rem);
+    }
+}
