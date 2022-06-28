@@ -170,7 +170,7 @@ main {
 }
 
 .main-nav__item--cta {
-    animation: wiggle 0.2s 2s 8 alternate;
+    animation: wiggle 0.2s 2s 8 ease-out;
 }
 
 @media (min-width: 40rem) {
@@ -278,11 +278,15 @@ main {
 
 
 @keyframes wiggle {
-    from {
+    0% {
         transform: rotateZ(0deg);
     }
 
-    to {
+    50% {
+        transform: rotateZ(-10deg);
+    }
+
+    100% {
         transform: rotateZ(10deg);
     }
 }

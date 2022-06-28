@@ -16,6 +16,10 @@
     overflow: hidden;
 }
 
+.testimonial:hover {
+    animation: flip 1s ease-out forwards;
+}
+
 .testimonial__image {
     vertical-align: middle;
     width: 100%;
@@ -89,4 +93,18 @@
     }
 
 
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg) skew(20deg);
+    }
+
+    50% {
+        transform: rotateY(180deg) skew(20deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) skew(20deg);
+    }
 }
