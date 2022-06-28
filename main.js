@@ -9,8 +9,10 @@ const mobileNav = document.querySelector('.mobile-nav');
 
 plan_buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-        modal.classList.add('open')
-        backdrop.classList.add('open')
+        setTimeout(() => {
+            backdrop.classList.add('open');
+            modal.classList.add('open');
+        }, 10);
     })
 })
 
@@ -19,7 +21,7 @@ backdrop.addEventListener('click', () => {
     closeModal()
 })
 
-if (close_modal_btn){
+if (close_modal_btn) {
     close_modal_btn.addEventListener('click', closeModal)
 
 }
@@ -33,6 +35,8 @@ function closeModal() {
 
 
 toggleBtn.addEventListener('click', () => {
-    backdrop.classList.add('open')
-    mobileNav.classList.add('open')
+    setTimeout(() => {
+        backdrop.classList.add('open')
+        mobileNav.classList.add('open')
+    }, 10)
 })
