@@ -11,13 +11,15 @@
   flex-direction: column;
   margin-bottom: 2rem;
   margin-top: 3rem;
-  justify-content: space-around;
+  justify-content: space-between;
+  overflow: hidden;
 
   .testimonial__image-container {
     transform: skew(30deg) rotateY(0deg);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    width: 60%;
+    width: 20rem;
+    max-width: 10rem;
     height: 10rem;
     min-width: 25rem;
     transition: transform .5s ease-out;
@@ -35,7 +37,7 @@
   .testimonial__image-container:hover {
     transform: skew(30deg) rotateY(180deg);
 
-    .testimonial__image{
+    .testimonial__image {
       transform: skew(30deg) scale(1.5);
     }
   }
@@ -60,6 +62,7 @@
   @media (min-width: 40rem) {
     flex-direction: row;
     justify-content: space-around;
+    overflow: visible;
 
     .testimonial__image-container {
       width: 60%;
