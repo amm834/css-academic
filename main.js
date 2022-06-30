@@ -6,14 +6,16 @@ const modal = document.querySelector('#modal');
 const confirm_btn = document.querySelector('.button-confirm');
 const cancel_btn = document.querySelector('.button-cancel');
 
+// choose btn
 if (choose_btns) {
     choose_btns.forEach(btn => {
         btn.addEventListener('click', () => {
             modal.classList.add('show-modal');
         })
     })
-
 }
+
+
 if (confirm_btn && cancel_btn) {
     confirm_btn.addEventListener('click', () => {
         modal.classList.remove('show-modal')
