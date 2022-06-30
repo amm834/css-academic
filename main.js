@@ -1,42 +1,47 @@
+const menu_btn = document.querySelector('.main-brand__menu');
+const mobile_nav = document.querySelector('.mobile-nav');
 const backdrop = document.querySelector('.backdrop');
-const modal = document.querySelector('.modal');
-const plan_buttons = document.querySelectorAll('.plan button');
-const close_modal_btn = document.querySelector('.modal__action--negative');
+const choose_btns = document.querySelectorAll('.choose-btn');
+const modal = document.querySelector('#modal');
+const confirm_btn = document.querySelector('.button-confirm');
+const cancel_btn = document.querySelector('.button-cancel');
 
-// mobile
-const toggleBtn = document.querySelector('.toggle-button');
-const mobileNav = document.querySelector('.mobile-nav');
-
-plan_buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        setTimeout(() => {
-            backdrop.classList.add('open');
-            modal.classList.add('open');
-        }, 10);
+if (choose_btns) {
+    choose_btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.classList.add('show-modal');
+        })
     })
-})
-
-backdrop.addEventListener('click', () => {
-    mobileNav.classList.remove('open')
-    closeModal()
-})
-
-if (close_modal_btn) {
-    close_modal_btn.addEventListener('click', closeModal)
 
 }
+if (confirm_btn && cancel_btn) {
+    confirm_btn.addEventListener('click', () => {
+        modal.classList.remove('show-modal')
+    })
 
-function closeModal() {
-    if (modal) {
-        modal.classList.remove('open');
-    }
-    backdrop.classList.remove('open');
+    cancel_btn.addEventListener('click', () => {
+        modal.classList.remove('show-modal')
+    })
+
 }
-
-
-toggleBtn.addEventListener('click', () => {
+menu_btn.addEventListener('click', () => {
+    mobile_nav.classList.remove('animate__fadeOutLeftBig')
+    mobile_nav.classList.add('show-menu')
     setTimeout(() => {
-        backdrop.classList.add('open')
-        mobileNav.classList.add('open')
-    }, 10)
+        backdrop.classList.add('show-backdrop')
+    }, 500);
 })
+
+
+if (backdrop) {
+    backdrop.addEventListener('click', () => {
+        if (mobile_nav) {
+            mobile_nav.classList.add('animate__fadeOutLeftBig')
+            setTimeout(() => {
+                mobile_nav.classList.remove('show-menu')
+                backdrop.classList.remove('show-backdrop')
+            }, 300)
+        }
+    })
+
+}

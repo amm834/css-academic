@@ -1,0 +1,187 @@
+@import "../utils";
+@import "../variables";
+
+@mixin hover-pink-effect-without-left {
+  border: 4px solid map-get($colors, light-pink);
+  border-left: 0;
+}
+
+@mixin hover-pink-effect-without-right {
+  border: 4px solid map-get($colors, light-pink);
+  border-right: 0;
+}
+
+@mixin full-border {
+  border: 4px solid map-get($colors, dark-green);
+}
+
+@mixin full-hover-effect {
+  border: 4px solid map-get($colors, light-pink);
+}
+
+@mixin media($width) {
+  @media (min-width: $width) {
+    @content
+  }
+}
+
+.background {
+  background-image: url("../images/plans-background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+main {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1000px) {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+.package {
+  border: 4px solid map-get($colors, dark-green);
+  margin-bottom: 3rem;
+  padding: 2rem;
+  width: 80%;
+  opacity: 0.9;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    animation: slide-up 300ms alternate;
+  }
+
+  a {
+    text-decoration: none;
+    color: darkgreen;
+  }
+
+  .package__title {
+    color: gray;
+  }
+
+  .package__info {
+    background: white;
+    border: 1px solid map-get($colors, dark-green);
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &#plus {
+    background: lighten(map-get($colors, "light-green"), 40%);
+    border-left: 0;
+
+    &:hover {
+      @include hover-pink-effect-without-left()
+    }
+
+    @include media(1000px) {
+      @include full-border();
+
+      &:hover {
+        @include full-hover-effect();
+      }
+    }
+
+
+    .package__badge {
+      background: map-get($colors, light-pink);
+      color: white;
+      display: inline-block;
+      position: absolute;
+      right: 2rem;
+      top: 0;
+      transform: rotateZ(30deg) translateX(6rem) translateY(-1rem);
+      width: 20rem;
+      text-align: center;
+      font-size: 1.2rem;
+
+
+    }
+  }
+
+  &#free {
+    background: lighten(map-get($colors, "light-green"), 40%);
+    text-align: right;
+    align-self: end;
+    border-right: 0;
+
+    &:hover {
+      @include hover-pink-effect-without-right();
+    }
+
+    @include media(1000px) {
+      @include full-border();
+
+      &:hover {
+        @include full-hover-effect();
+      }
+    }
+  }
+
+  &#premium {
+    background: map-get($colors, dark-green);
+    border-left: 0;
+    color: white;
+
+    &:hover {
+      @include hover-pink-effect-without-left()
+    }
+
+    @include media(1000px) {
+      @include full-border();
+
+      &:hover {
+        @include full-hover-effect();
+      }
+    }
+
+
+    .package__title {
+      color: white;
+    }
+
+    .package__subtitle {
+      color: lightgray;
+    }
+
+
+  }
+
+
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-.5rem);
+  }
+
+  50% {
+    transform: translateY(-1rem);
+  }
+
+  80% {
+    transform: translateY(-1.2rem);
+  }
+
+  100% {
+    transform: translateY(-1.5rem);
+  }
+
+}

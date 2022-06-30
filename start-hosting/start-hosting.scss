@@ -1,0 +1,71 @@
+@import "../utils";
+@import "../variables";
+
+input, select {
+  width: 100%;
+  padding: .4rem .2rem;
+  border: 2px solid map-get($colors, dark-green);
+  outline: none;
+}
+
+.signup-title {
+  color: map-get($colors, light-pink);
+  text-align: center;
+  font-size: 1.3rem;
+  width: 100vw;
+
+  @media (min-width: 40rem) {
+    font-size: 1.5rem;
+    width: auto;
+  }
+}
+
+button {
+  background: map-get($colors, dark-green);
+  padding: .4rem .2rem;
+  text-align: center;
+  border-radius: .3rem;
+  outline: 0;
+  color: white;
+  border: 2px solid transparent;
+  transition: all .3s ease-out;
+}
+
+button:hover,
+button:active {
+  background: white;
+  border: 2px solid map-get($colors, dark-green);
+  color: map-get($colors, dark-green);
+}
+
+.signup-page {
+  margin: 0 auto;
+}
+
+.signup-form {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-row-gap: .8rem;
+
+  .signup-form__checkbox {
+    display: grid;
+    grid-template-columns: 2rem auto;
+  }
+
+  @media (min-width: 40rem) {
+    grid-template-columns: 8rem auto;
+
+    select {
+      grid-column: 1/3;
+    }
+
+    .signup-form__checkbox {
+      grid-column: 1/3;
+    }
+
+    button {
+      grid-column: 1/3;
+    }
+  }
+}
