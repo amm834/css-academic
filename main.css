@@ -194,7 +194,8 @@ body {
     border-radius: 0.5rem;
     color: white;
     transition: background-color 0.25s ease-out;
-    animation: swing 800ms 8 alternate;
+    -webkit-animation: swing 800ms 8 alternate;
+            animation: swing 800ms 8 alternate;
   }
   .main-header .main-nav__item.action-btn:hover, .main-header .main-nav__item.action-btn:active {
     background: white;
@@ -350,6 +351,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 #key-features .key-feature__list .key-feature {
   list-style: none;
@@ -358,6 +361,7 @@ main {
   align-items: center;
   flex-direction: column;
   margin-bottom: 0.3rem;
+  max-width: 18rem;
 }
 #key-features .key-feature__list .key-feature .key-feature__image {
   height: 6rem;
@@ -375,6 +379,7 @@ main {
 @media (min-width: 40rem) {
   #key-features .key-feature__list {
     flex-direction: row;
+    justify-content: space-around;
   }
   #key-features .key-feature__list .key-feature__description {
     text-align: center;
@@ -410,6 +415,4 @@ main {
     justify-content: center;
     align-items: center;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

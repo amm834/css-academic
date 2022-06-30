@@ -31,7 +31,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-rows: 3rem auto fit-content(8rem);
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header""main""footer";
   position: relative;
 }
 
@@ -102,7 +102,7 @@ body {
 
       .main-brand__menu {
         margin-left: .5rem;
-        color: map-get($colors,dark-green);
+        color: map-get($colors, dark-green);
       }
 
       .main-brand__image {
@@ -216,7 +216,7 @@ main {
 #product-overview {
   height: 30vh;
   background-image: url("images/freedom.jpg"),
-  linear-gradient(170deg, rgba(193, 193, 193, 0.44348161627932425) 0%, rgba(143, 115, 14, 0.776537641423757) 0%);
+    linear-gradient(170deg, rgba(193, 193, 193, 0.44348161627932425) 0%, rgba(143, 115, 14, 0.776537641423757) 0%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 20% left 30%;
@@ -370,6 +370,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 
     .key-feature {
       list-style: none;
@@ -378,6 +380,7 @@ main {
       align-items: center;
       flex-direction: column;
       margin-bottom: .3rem;
+      max-width: 18rem;
 
       .key-feature__image {
         height: 6rem;
@@ -397,6 +400,9 @@ main {
 
     @media (min-width: 40rem) {
       flex-direction: row;
+      justify-content: space-around;
+
+
 
       .key-feature__description {
         text-align: center;
@@ -439,4 +445,3 @@ main {
     }
   }
 }
-

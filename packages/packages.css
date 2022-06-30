@@ -38,7 +38,8 @@ main {
   overflow: hidden;
 }
 .package:hover {
-  animation: slide-up 300ms alternate;
+  -webkit-animation: slide-up 300ms alternate;
+          animation: slide-up 300ms alternate;
 }
 .package a {
   text-decoration: none;
@@ -123,7 +124,7 @@ main {
   color: lightgray;
 }
 
-@keyframes slide-up {
+@-webkit-keyframes slide-up {
   0% {
     transform: translateY(0);
   }
@@ -141,4 +142,20 @@ main {
   }
 }
 
-/*# sourceMappingURL=packages.css.map */
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  80% {
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    transform: translateY(-1.5rem);
+  }
+}/*# sourceMappingURL=packages.css.map */
