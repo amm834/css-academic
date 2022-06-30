@@ -33,7 +33,10 @@ body {
   grid-template-rows: 3rem auto fit-content(8rem);
   grid-template-areas: "header""main""footer";
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
+
 
 .modal {
   background: white;
@@ -216,7 +219,7 @@ main {
 #product-overview {
   height: 30vh;
   background-image: url("images/freedom.jpg"),
-    linear-gradient(170deg, rgba(193, 193, 193, 0.44348161627932425) 0%, rgba(143, 115, 14, 0.776537641423757) 0%);
+  linear-gradient(170deg, rgba(193, 193, 193, 0.44348161627932425) 0%, rgba(143, 115, 14, 0.776537641423757) 0%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 20% left 30%;
@@ -395,13 +398,13 @@ main {
         color: white;
         font-size: 125%;
         font-weight: bold;
+        text-align: center;
       }
     }
 
     @media (min-width: 40rem) {
       flex-direction: row;
       justify-content: space-around;
-
 
 
       .key-feature__description {
@@ -413,35 +416,32 @@ main {
 
 
 .main-footer {
-  background: black;
-  padding: .5rem 0;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  display: flex;
   grid-area: footer;
+  background: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-  .main-footer__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  a {
+    padding: 1rem 0;
+    color: white;
+    text-decoration: none;
 
-    .main-footer__link {
-      list-style: none;
-      padding: 1rem .5rem;
-
-      a {
-        text-decoration: none;
-        color: white;
-
-        &:hover {
-          color: gray;
-        }
-      }
+    &:hover {
+      color: lightgray;
     }
+  }
 
-    @media (min-width: 40rem) {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+  @media (min-width: 40rem) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0;
+
+    a {
+      margin: 0 1rem;
     }
   }
 }

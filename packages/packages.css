@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: -1;
 }
@@ -38,8 +38,7 @@ main {
   overflow: hidden;
 }
 .package:hover {
-  -webkit-animation: slide-up 300ms alternate;
-          animation: slide-up 300ms alternate;
+  animation: slide-up 300ms alternate;
 }
 .package a {
   text-decoration: none;
@@ -124,7 +123,7 @@ main {
   color: lightgray;
 }
 
-@-webkit-keyframes slide-up {
+@keyframes slide-up {
   0% {
     transform: translateY(0);
   }
@@ -142,20 +141,4 @@ main {
   }
 }
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-0.5rem);
-  }
-  50% {
-    transform: translateY(-1rem);
-  }
-  80% {
-    transform: translateY(-1.2rem);
-  }
-  100% {
-    transform: translateY(-1.5rem);
-  }
-}/*# sourceMappingURL=packages.css.map */
+/*# sourceMappingURL=packages.css.map */
